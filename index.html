@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: white;
+    }
+
+    img {
+      height: 300px;
+      align-items: center;
+    }
+
+    #searchtab {
+      padding: 2rem 8rem;
+    }
+    #article {
+      padding: 0 8rem;
+    }
+    h1 {
+      text-align: center;
+    }
+
+    .footer {
+      padding: 0 8rem;
+    }
+    .footer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 0 2rem;
+    }
+    .carousel-item {
+      height: 100%;
+      width: 100%;
+    }
+    #carouselExample.carousel.slide {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .footer p {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div id="wrapper">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="carousel.pokemon.1.PNG" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="carousel.pokemon.2..PNG"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="carousel.pokemon.PNG" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="searchtab">
+        <h1 id="myH1">Welcome to Pokemon World!!</h1>
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon name" />
+
+        <button id="mySubmit" onclick="fetchData()">Search Pokemon</button
+        ><br />
+
+        <img
+          src=""
+          alt="Pokemon Sprite"
+          id="pokemonSprite"
+          style="display: none"
+        />
+        <p id="pokemonType"></p>
+        <p id="pokemonId"></p>
+      </div>
+
+      <div id="article">
+        <p>
+          Pokémon has captivated generations worldwide with its enchanting
+          universe, where fantastical creatures roam and adventure awaits at
+          every turn. From its humble beginnings as a video game in the 1990s to
+          its expansion into a global phenomenon spanning trading cards,
+          animated series, movies, and more, Pokémon has woven itself into the
+          fabric of popular culture.
+        </p>
+
+        <p>
+          At its core, Pokémon is not merely a franchise but a journey—a journey
+          of friendship, discovery, and growth. Trainers embark on quests to
+          become Pokémon Masters, forming unbreakable bonds with their pocket
+          monsters along the way. Each Pokémon, with its unique abilities and
+          personality, adds depth to this vibrant world, fostering connections
+          that transcend pixels and polygons.
+        </p>
+        <p>
+          Beyond the thrill of battles and the pursuit of legendary Pokémon lies
+          a deeper narrative, one that celebrates diversity, resilience, and the
+          power of teamwork. Through its characters and stories, Pokémon
+          inspires us to embrace our individuality, confront challenges head-on,
+          and cherish the bonds we share with others.
+        </p>
+        <p>
+          As we continue to journey through the Pokémon universe, generation
+          after generation, the magic endures. Whether reliving cherished
+          memories or embarking on new adventures, Pokémon continues to spark
+          the imagination and unite fans of all ages in a celebration of
+          friendship, courage, and the enduring spirit of adventure.
+        </p>
+      </div>
+      <footer class="footer">
+        <img src="giphy.gif" alt="" />
+
+        <p>
+          &copy; POKEMON MASTER Terence Tagayona. All rights reserved. |
+          <a href="privacy-policy.html">Privacy Policy</a> |
+          <a href="terms-of-service.html">Terms of Service</a> |
+          <a id="contact" href="contact.html">Contact Us</a>
+        </p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
